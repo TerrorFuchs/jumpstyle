@@ -8,7 +8,7 @@ on:
 
 defaults:
   run:
-    working-directory: ./slides
+    working-directory: .
 
 jobs:
   deploy:
@@ -44,7 +44,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v1
         with:
-          path: ./slides/dist
+          path: ./dist
 
       - name: Deploy
         id: deployment
